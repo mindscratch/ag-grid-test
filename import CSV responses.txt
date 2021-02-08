@@ -1,0 +1,88 @@
+import CSV responses:
+
+if($json==FALSE) { echo '{"success":true,"json_error":"' . json_last_error_msg() .'"}';
+
+{
+    "success": true,
+    "results": [
+        {
+            "rowNo": 1,
+            "success": false,
+            "msg": "",
+            "actionItem": {
+                "id": "78",
+                "name": "Acme GSS AC-1 ACCESS CONTROL POLICY AND PROCEDURES",
+                "bo": {
+                    "id": "4",
+                    "name": "Acme GSS"
+                },
+                "co": {
+                    "id": "4077",
+                    "name": "ACCESS CONTROL POLICY AND PROCEDURES"
+                },
+                "workflow": {
+                    "id": "1"
+                },
+                "status": {
+                    "id": "1",
+                    "name": "Implemented"
+                },
+                "procedureSet": {
+                    "id": "2805"
+                }
+            }
+        },
+        {
+            "rowNo": 2,
+            "success": false,
+            "msg": "",
+            "actionItem": {
+                "id": "79",
+                "name": "Acme GSS AT-1 SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES",
+                "bo": {
+                    "id": "4",
+                    "name": "Acme GSS"
+                },
+                "co": {
+                    "id": "4193",
+                    "name": "SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES"
+                },
+                "workflow": {
+                    "id": "1"
+                },
+                "status": {
+                    "id": "1",
+                    "name": "Implemented"
+                },
+                "procedureSet": {
+                    "id": "3718"
+                }
+            }
+        }
+    ],
+    "badCol": [
+        "Impact",
+        "Likelihood",
+        "Risk Level",
+        "Actual Implementation Date",
+        "Assessment Method",
+        "Assessment End Date",
+        "Assessor",
+        "Customer Assessment",
+        "Auditor",
+        "Peer Reviewer",
+        "Peer Review",
+        "Common Control Status",
+        "Identified Weakness / Vulnerability",
+        "Milestone Status",
+        "Milestone Finish",
+        "Non-compliant Date",
+        "Planned Implementation Date",
+        "System Specific Implementation",
+        "Test Case",
+        "Remediation Cost",
+        "Customer Control Implementation",
+        "Assessment Frequency",
+        "Comments"
+    ]
+}

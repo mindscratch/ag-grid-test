@@ -1,0 +1,7 @@
+{
+  "/app/API": {
+    "target": "http://localhost/",
+    "secure": false,
+    "changeOrigin": false
+  }
+}

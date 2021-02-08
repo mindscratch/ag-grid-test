@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+//@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* get the panel (that appears when you click the select) to appear below the select */
+.mat-select-panel-wrap {
+  margin-top: 30px;
+}
+
+/* fix font size of the form field within the toolbar */
+mat-toolbar.mat-toolbar mat-form-field.mat-form-field {
+  font-size: 14px;
+
+  label.mat-form-field-label {
+    font-weight: bold;
+  }
+
+  .mat-form-field-flex {
+    background-color: inherit;
+  }
+}
+
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+// TODO choose a theme and remove the other
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-material.css";

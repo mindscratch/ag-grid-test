@@ -1,0 +1,28 @@
+<?php
+require_once '../../../inc/headers/header-user.php';
+session_write_close();
+require_once '../../../inc/functions.php';
+require_once '../../../inc/password.php';
+require_once '../../../inc/bo.php';
+require_once '../../../inc/control.php';
+require_once '../../../inc/actionplan.php';
+global $userId, $systemName;
+$systemPerm=getUserSystemPermission($userId);
+$preferences=json_decode(getUserSetting($userId, "preferences")[1]);
+?>
+  <script> sessionStorage.setItem('tigrisInfo', JSON.stringify({
+    user: '<?php echo $user; ?>',
+    userId: <?php echo $userId; ?>,
+    systemName: '<?php echo $systemName; ?>',
+    appName: '<?php echo $appname; ?>',
+    systemPermissions: <?php echo json_encode($systemPerm); ?>,
+    preferences: <?php echo json_encode($preferences); ?>,
+    session: {
+      lifetime: '<?php echo $_SESSION['lifetime']; ?>',
+      warningTime: '<?php echo $_SESSION['warningtime']; ?>',
+    }
+  }));
+  </script>
+
+  <base href="/app/tigris/"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
